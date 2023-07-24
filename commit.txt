@@ -21,3 +21,8 @@ $ cd /home/soporte/workspace/miweb
 $ git remote add origin git@github.com:sebastianVP/miweb.git
 $ git push -u origin main o  $git push -u origin master
 $ git status
+Para el caso de la ramab hacemos lo siguiente:
+$git checkout  ramab
+$git status
+$git push -u origin ramab
+
