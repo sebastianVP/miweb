@@ -1,0 +1,23 @@
+1)  Escribimos el siguiente comando de preferencia en:
+
+$ cd /home/soporte/
+$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+Le damos enter a todo y ok
+Luego tenemos que visualizar el archivo id_rsa.pub que se encuentra en:
+$ cat  /home/soporte/.ssh/id_rsa.pub
+
+copiamos todo su contenido y aqui los compiamos en:
+*  Abrir gitub
+* Luego settings
+* Luego SSH and GPG Keysa
+NEW SSH Keys
+Le ponemos un nombre y copiamos el contenido de id_rsa.pub 
+para estar seguro debe tener el correo electronico del github.
+
+y Listo,
+Regresamos a la carpeta del repositorio
+
+$ cd /home/soporte/workspace/miweb
+$ git remote add origin git@github.com:sebastianVP/miweb.git
+$ git push -u origin main o  $git push -u origin master
+$ git status
